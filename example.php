@@ -3,17 +3,19 @@
 namespace Test;
 
 use TripSorter\Locations\Airport;
+use TripSorter\Locations\RailwayStation;
+use TripSorter\Transports\AirplaneTicket;
 use TripSorter\Transports\BusTicket;
+use TripSorter\Transports\TrainTicket;
 use TripSorter\TripSorter;
 
 include __DIR__ . '/vendor/autoload.php';
 
 $trips = TripSorter::fromCards(
-    new BusTicket(new Airport('B'), new Airport('D'), 4),
-    new BusTicket(new Airport('N'), new Airport('A'), 2),
-    new BusTicket(new Airport('A'), new Airport('B'), 3),
-    new BusTicket(new Airport('D'), new Airport('O'), 5),
-    new BusTicket(new Airport('M'), new Airport('N'), 1),
+    new AirplaneTicket(new Airport('Stockholm'), new Airport('New York JFK'), '22', '7B'),
+    new BusTicket(new RailwayStation('Barcelona'), new Airport('Gerona')),
+    new TrainTicket(new RailwayStation('Madrid'), new RailwayStation('Barcelona'), '78A', '45B'),
+    new AirplaneTicket(new Airport('Gerona'), new Airport('Stockholm'), '45B', '3A'),
 );
 
-echo $trips->description("\n")->value;
+echo $trips->description(' ')->value;
