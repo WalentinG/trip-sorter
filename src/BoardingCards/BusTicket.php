@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TripSorter\Transports;
+namespace TripSorter\BoardingCards;
 
 use TripSorter\BoardingCard;
 use TripSorter\Description;

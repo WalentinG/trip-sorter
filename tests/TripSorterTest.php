@@ -7,7 +7,7 @@ namespace Test;
 use PHPUnit\Framework\TestCase;
 use TripSorter\BoardingCard;
 use TripSorter\Locations\Airport;
-use TripSorter\Transports\BusTicket;
+use TripSorter\BoardingCards\BusTicket;
 use TripSorter\Trip;
 use TripSorter\TripSorter;
 

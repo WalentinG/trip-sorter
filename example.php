@@ -4,9 +4,9 @@ namespace Test;
 
 use TripSorter\Locations\Airport;
 use TripSorter\Locations\RailwayStation;
-use TripSorter\Transports\AirplaneTicket;
-use TripSorter\Transports\BusTicket;
-use TripSorter\Transports\TrainTicket;
+use TripSorter\BoardingCards\AirplaneTicket;
+use TripSorter\BoardingCards\BusTicket;
+use TripSorter\BoardingCards\TrainTicket;
 use TripSorter\TripSorter;
 
 include __DIR__ . '/vendor/autoload.php';

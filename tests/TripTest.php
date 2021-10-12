@@ -6,7 +6,7 @@ namespace Test;
 
 use PHPUnit\Framework\TestCase;
 use TripSorter\Locations\Airport;
-use TripSorter\Transports\BusTicket;
+use TripSorter\BoardingCards\BusTicket;
 use TripSorter\Trip;
 
 final class TripTest extends TestCase
